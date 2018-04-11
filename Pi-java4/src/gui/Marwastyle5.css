@@ -1,0 +1,126 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 avr. 2018, 18:03:08
+    Author     : Siala
+*/
+
+.mainFxmlClass {
+
+}
+.background {
+    -fx-background-color: #f489f4;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #a159a1;
+         
+    -fx-control-inner-background: #a159a1;
+    -fx-background-color: #a159a1;
+   
+    -fx-table-header-border-color: #a159a1;
+    -fx-padding: 5;;
+    -fx-border-color: #a159a1
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #510d51;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: #603060;
+    -fx-border-color: 
+        #603060
+        #603060
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+   
+    
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+    -fx-focus-color: #603060; 
+}
+
+.table-view .table-row-cell{
+   
+     -fx-cell-size: 58px;
+     -fx-padding: 5 5 5 5;
+    
+    
+    
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #603060 transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#603060,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#510d51,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#510d51,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: #510d51;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+
+
+
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FormModifyProdController">
+   <children>
+      <AnchorPane layoutY="69.0" prefHeight="430.0" prefWidth="987.0" style="-fx-background-color: #f2d9e6;">
+         <children>
+            <Label layoutX="53.0" layoutY="67.0" prefHeight="69.0" prefWidth="110.0" text="Nom :">
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="221.0" text="Stock:">
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="146.0" text="Prix">
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tnom" layoutX="167.0" layoutY="76.0" prefHeight="51.0" prefWidth="261.0" />
+            <TextField fx:id="tprix" layoutX="167.0" layoutY="148.0" prefHeight="50.0" prefWidth="261.0" />
+            <TextField fx:id="tstock" layoutX="167.0" layoutY="226.0" prefHeight="44.0" prefWidth="261.0" />
+            <Button fx:id="btnimg" layoutX="557.0" layoutY="283.0" mnemonicParsing="false" onAction="#uploadimage" prefHeight="50.0" prefWidth="122.0" text="Image">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img" fitHeight="204.0" fitWidth="273.0" layoutX="473.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="combo" layoutX="178.0" layoutY="296.0" prefHeight="37.0" prefWidth="238.0" />
+            <Label layoutX="53.0" layoutY="296.0" prefHeight="37.0" prefWidth="110.0" text="Categorie">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn0" layoutX="90.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnadd" prefHeight="54.0" prefWidth="104.0" style="-fx-background-color: pink; -fx-background-radius: 200;" text="Modifier">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Label fx:id="LabelAlert" layoutX="19.0" layoutY="6.0" prefHeight="25.0" prefWidth="361.0" />
+            <Label fx:id="AlertPrix" layoutX="19.0" layoutY="36.0" prefHeight="37.0" prefWidth="339.0" />
+            <Text fx:id="emptyIdproduit" fill="TRANSPARENT" layoutX="369.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="emptyimageName" fill="TRANSPARENT" layoutX="482.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="69.0" prefWidth="987.0" style="-fx-background-color: pink;">
+         <children>
+            <ImageView fx:id="acceuil" fitHeight="54.0" fitWidth="58.0" layoutY="7.0" onMouseClicked="#acceuil" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ms3lines.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="60.0" fitWidth="58.0" layoutX="859.0" layoutY="6.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/mslogout.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="241.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 3.2em; -fx-font-weight: bold;" text="Modifier un produit" />
+            <ImageView fx:id="close" fitHeight="41.0" fitWidth="40.0" layoutX="939.0" layoutY="6.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/siw2%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

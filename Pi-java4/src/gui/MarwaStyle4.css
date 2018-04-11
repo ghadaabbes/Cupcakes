@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 avr. 2018, 23:36:01
+    Author     : Siala
+*/
+
+/*
+   Find more details on JavaFX supported named colors at
+   http://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html#t...
+*/
+
+/* Colors of JavaFX pie chart slices. */
+.data0.chart-pie { -fx-pie-color: #ecc6d9; }
+.data1.chart-pie { -fx-pie-color: #cc6699; }
+.data2.chart-pie { -fx-pie-color: #73264d; }
+.data3.chart-pie { -fx-pie-color: #ff99cc; }
+.data4.chart-pie { -fx-pie-color: #cc99ff; }
+.data5.chart-pie { -fx-pie-color: #00cc66; }
+.data6.chart-pie { -fx-pie-color: #006699; }
+.data7.chart-pie { -fx-pie-color: #000066; }
+.data8.chart-pie { -fx-pie-color: #993333; }
+.data9.chart-pie { -fx-pie-color: #ff9966; }
+.data10.chart-pie { -fx-pie-color: #666699; }
+.data11.chart-pie { -fx-pie-color: dodgerblue; }
+
+/* Pie Chart legend background color and stroke. */
+.chart-legend { -fx-background-color: #ecdfe0; }
+

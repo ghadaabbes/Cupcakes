@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="900.0" prefWidth="1353.0" style="-fx-text-fill: white; -fx-font-size: 1.2em; -fx-font-weight: bold; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InterfaceClientController">
+   <children>
+      <SplitPane prefHeight="930.0" prefWidth="72.0" style="-fx-background-color: #0d0d0d;">
+         <effect>
+            <DropShadow radius="4.75" width="0.0" />
+         </effect>
+         <items>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="163.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fx:id="CHome" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToHome" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/ms3lines.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fx:id="CclientIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToClientProfile" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msuser1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="70.0" style="">
+                     <children>
+                        <ImageView fx:id="CrecetteIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToRecettes" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msrecette.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fx:id="CPatisserieIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToPatisseries" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msShop.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="50.0">
+                     <children>
+                        <ImageView fx:id="CShopIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToShop" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msproduits.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="50.0">
+                     <children>
+                        <ImageView fx:id="CPromoIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToPromo" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/mspromo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="50.0">
+                     <children>
+                        <ImageView fx:id="CReclamationIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToReclamation" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msReclamation.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="50.0">
+                     <children>
+                        <ImageView fx:id="CEvaluationIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToEvaluation" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msEval.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="50.0">
+                     <children>
+                        <ImageView fx:id="CPanierIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#GoToPanier" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/msPanier.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="0.0">
+                     <children>
+                        <ImageView fx:id="CLogoutIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#LogOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/mslogout.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="200.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="72.0" prefHeight="930.0" prefWidth="325.0" style="-fx-background-color: #262626;">
+         <items>
+            <VBox prefHeight="524.0" prefWidth="323.0" style="-fx-background-color: #262626;">
+               <children>
+                  <VBox fx:id="CBoxHome" onMouseClicked="#GoToHome" prefHeight="160.0" prefWidth="323.0" style="-fx-background-color: #660033;">
+                     <children>
+                        <ImageView fx:id="CHomeIcon" fitHeight="135.0" fitWidth="143.0" onMouseClicked="#GoToHome" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="90.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/mshome.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="LabelHome" onMouseClicked="#GoToHome" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Acceuil">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </VBox>
+                  <VBox fx:id="CBoxClient" onMouseClicked="#GoToClientProfile" prefHeight="50.0" prefWidth="323.0" style="-fx-background-color: #262626;">
+                     <children>
+                        <Text fx:id="LabelClient" fill="WHITE" onMouseClicked="#GoToClientProfile" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em;" text="Profile">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox fx:id="CBoxRecette" onMouseClicked="#GoToRecettes" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="LabelRecette" onMouseClicked="#GoToRecettes" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Recettes">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxPatisserie" onMouseClicked="#GoToPatisseries" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Patisseries">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxShop" onMouseClicked="#GoToShop" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Shop">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxPromo" onMouseClicked="#GoToPromo" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Promotion">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxReclamation" onMouseClicked="#GoToReclamation" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Réclamation">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxEvaluation" onMouseClicked="#GoToEvaluation" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Evaluation">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxPanier" onMouseClicked="#GoToPanier" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Mon Panier">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </VBox>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="397.0" layoutY="-3.0" opacity="0.0" prefHeight="930.0" prefWidth="18.0" />
+      <VBox fx:id="ChangeItGirls" layoutX="417.0" prefHeight="930.0" prefWidth="936.0" style="-fx-background-color: white;">
+         <children>
+            <Pane prefHeight="935.0" prefWidth="936.0" style="-fx-background-color: #f1f3f2;">
+               <children>
+                  <Pane prefHeight="48.0" prefWidth="936.0" style="-fx-background-color: salmon;" />
+                  <ImageView fitHeight="163.0" fitWidth="198.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/mslogo.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Pane layoutY="852.0" prefHeight="78.0" prefWidth="936.0" style="-fx-background-color: lightgrey;">
+                     <children>
+                        <Text layoutX="317.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designed by Mind Space team 2018" />
+                     </children></Pane>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="6.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/mscupcake3.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect></ImageView>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="318.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/mscupcake4.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect></ImageView>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="629.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/mscupcake5.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="243.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="Bienvenue dans Cupcakes" />
+                  <ImageView fitHeight="410.0" fitWidth="601.0" layoutX="189.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/msClientHomePage.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="close" fitHeight="33.0" fitWidth="34.0" layoutX="888.0" layoutY="9.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/msclose2.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</AnchorPane>

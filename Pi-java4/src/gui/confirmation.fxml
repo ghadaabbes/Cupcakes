@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="766.0" prefWidth="1115.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConfirmationController">
+   <children>
+      <Text fill="#dd1313" layoutX="139.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre Commande a été enregistrée avec succès  !!!">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="pdfe" layoutX="416.0" layoutY="586.0" onMouseClicked="#creerPdf" text="telecharger facture" textFill="#da0f0f">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="119.0" fitWidth="150.0" layoutX="464.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/mslogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

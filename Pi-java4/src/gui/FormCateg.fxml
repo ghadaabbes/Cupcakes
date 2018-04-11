@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FormCategController">
+   <children>
+      <ImageView fx:id="background" fitHeight="968.0" fitWidth="1530.0" layoutX="-8.0" layoutY="4.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <MotionBlur radius="0.0" />
+         </effect>
+         <image>
+            <Image url="@../icons/thumb-1920-419958.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="250.0" layoutY="94.0" opacity="0.71" prefHeight="699.0" prefWidth="943.0" style="-fx-background-color: #FA8072;">
+         <children>
+            <Label layoutX="144.0" layoutY="233.0" prefHeight="69.0" prefWidth="110.0" text="Nom :">
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="375.0" text="Patisserie :">
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tnom" layoutX="406.0" layoutY="233.0" prefHeight="75.0" prefWidth="339.0" />
+            <Button fx:id="btnadd" layoutX="317.0" layoutY="529.0" mnemonicParsing="false" onAction="#addcateg" prefHeight="82.0" prefWidth="104.0" style="-fx-background-radius: 200;" text="Ajouter">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="combo" layoutX="413.0" layoutY="373.0" prefHeight="54.0" prefWidth="172.0" />
+            <Label layoutX="85.0" layoutY="34.0" prefHeight="137.0" prefWidth="841.0" text="Ajouter votre categorie" textAlignment="CENTER" textFill="#9e4b86" textOverrun="WORD_ELLIPSIS">
+               <effect>
+                  <Bloom />
+               </effect>
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="65.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelalert" layoutX="146.0" layoutY="16.0" prefHeight="36.0" prefWidth="542.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

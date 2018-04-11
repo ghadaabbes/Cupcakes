@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EspaceProdController">
+   <children>
+      <Pane layoutX="-5.0" prefHeight="152.0" prefWidth="992.0" style="-fx-background-color: #DB7093;">
+         <children>
+            <Text fill="WHITE" layoutX="338.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3.5em; -fx-font-weight: bold;" text="Bienvenue" />
+            <ImageView fx:id="acceuil" fitHeight="56.0" fitWidth="60.0" layoutX="14.0" layoutY="41.0" onMouseClicked="#Acceuil" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ms3lines.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="67.0" fitWidth="60.0" layoutX="918.0" layoutY="43.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/mslogout.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Text fx:id="username" fill="#f2d7d7" layoutX="589.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="118.13671875" />
+      <AnchorPane layoutY="159.0" prefHeight="624.0" prefWidth="986.0">
+         <children>
+            <ImageView fitHeight="660.0" fitWidth="1004.0" layoutX="-3.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/msbackground1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn0" layoutX="58.0" layoutY="461.0" mnemonicParsing="false" onAction="#addprod" prefHeight="95.0" prefWidth="402.0" style="-fx-border-radius: 100; -fx-border-color: darksalmon; -fx-text-fill: darksalmon; -fx-font-size: 2em; -fx-font-weight: bold; -fx-background-radius: 100; -fx-background-color: #993366;" text="Ajouter un nouveau produit" />
+            <ImageView fx:id="btnModify" fitHeight="95.0" fitWidth="101.0" layoutX="732.0" layoutY="469.0" onMouseClicked="#Modify" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../icons/siw1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="110.0" layoutX="544.0" layoutY="460.0" onMouseClicked="#Delete" onMouseDragReleased="#btnDelete" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../icons/siw2.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="Table" layoutX="21.0" layoutY="31.0" prefHeight="381.0" prefWidth="904.0" style="-fx-background-color: grey;">
+               <columns>
+                  <TableColumn fx:id="nom" prefWidth="216.0" text="Nom" />
+                  <TableColumn fx:id="prix" prefWidth="190.0" text="Prix" />
+                  <TableColumn fx:id="stock" prefWidth="245.0" text="Stock" />
+                  <TableColumn fx:id="categ" prefWidth="252.0" text="Categorie" />
+                  <TableColumn fx:id="idprod" minWidth="0.0" prefWidth="0.0" text="Column X" visible="false" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="828.0" style="-fx-background-color: #fff8dc;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ListeReclamationController">
+   <children>
+      <Text fx:id="list" fill="#d62d6b" focusTraversable="true" fontSmoothingType="LCD" layoutX="258.0" layoutY="128.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.82" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Reclamations">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <cursor>
+            
+         </cursor>
+         <effect>
+            <Lighting specularConstant="0.79" specularExponent="19.07">
+               <bumpInput>
+                  <Shadow color="#8d3232" />
+               </bumpInput>
+               <light>
+                  
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <TableView fx:id="listrec" layoutX="220.0" layoutY="201.0" prefHeight="382.0" prefWidth="689.0">
+        <columns>
+          <TableColumn fx:id="nompatis" prefWidth="131.0" text="Nom Patisserie" />
+            <TableColumn fx:id="mail" prefWidth="175.0" text="e-Mail" />
+          <TableColumn fx:id="desc" prefWidth="123.0" text="Description" />
+            <TableColumn fx:id="id" prefWidth="505.0" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="76.0" fitWidth="127.0" layoutX="11.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/mslogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="239.0" fitWidth="298.0" layoutX="610.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/img-demo-4.png" />
+         </image></ImageView>
+      <ImageView fitHeight="422.0" fitWidth="269.0" layoutX="-50.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/banner-1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="24.0" layoutY="290.0" mnemonicParsing="false" onAction="#retour" text=" Menu" textFill="#c64848" />
+      <TextField fx:id="filterInput" layoutX="455.0" layoutY="175.0" onKeyPressed="#searchRecord" />
+   </children>
+</AnchorPane>

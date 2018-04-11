@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="an" prefHeight="651.0" prefWidth="1165.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficheComandeController">
+   <children>
+      <Text fill="#e4bf1b" layoutX="377.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details de la Commande">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Text>
+      <TableView fx:id="list" layoutX="124.0" layoutY="109.0" prefHeight="473.0" prefWidth="919.0">
+        <columns>
+          <TableColumn fx:id="idd" prefWidth="161.0" text="id" />
+          <TableColumn fx:id="datee" prefWidth="183.0" text="date_commande" />
+            <TableColumn fx:id="produit" prefWidth="162.0" text="produit" />
+            <TableColumn fx:id="quantite" prefWidth="183.0" text="quantite" />
+            <TableColumn fx:id="prix" prefWidth="229.0" text="prix_produits" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="ok" layoutX="583.0" layoutY="600.0" onMouseClicked="#ok" text="ok" textFill="#d0ca15">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="637.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ajouteradresseController">
+   <children>
+      <JFXTextField fx:id="telephone" layoutX="515.0" layoutY="294.0" prefHeight="25.0" prefWidth="165.0" promptText="telephone" />
+      <JFXTextField fx:id="adresse" layoutX="515.0" layoutY="226.0" prefHeight="25.0" prefWidth="165.0" promptText="adresse" />
+      <JFXTextField fx:id="cp" layoutX="515.0" layoutY="354.0" prefHeight="25.0" prefWidth="165.0" promptText="code postal" />
+      <JFXTextField fx:id="pays" layoutX="515.0" layoutY="407.0" prefHeight="25.0" prefWidth="165.0" promptText="pays" />
+      <JFXTextField fx:id="ville" layoutX="515.0" layoutY="462.0" prefHeight="25.0" prefWidth="165.0" promptText="ville" />
+      <JFXTextField fx:id="complement" layoutX="515.0" layoutY="519.0" prefHeight="25.0" prefWidth="165.0" promptText="complement" />
+      <JFXButton fx:id="ajouter" buttonType="RAISED" layoutX="556.0" layoutY="576.0" onMouseClicked="#ajouterAdresse" prefHeight="47.0" prefWidth="90.0" ripplerFill="#bc1717" text="ajouter" textFill="#bc2020">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="97.0" fitWidth="105.0" layoutX="549.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/mslogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e80c0c" layoutX="504.0" layoutY="159.0" opacity="0.68" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle Adresse" wrappingWidth="283.91015625">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor>
+      </Text>
+   </children>
+</AnchorPane>

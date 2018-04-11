@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="930.0" prefWidth="939.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InterfaceClientProfile_ModifierRecetteController">
+   <children>
+      <VBox fx:id="ChangeItGirls" prefHeight="930.0" prefWidth="944.0" style="-fx-background-color: white;">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="930.0" style="-fx-background-color: #cc6699;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+               <children>
+                  <Text fx:id="username" layoutX="197.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 2em;" />
+                  <Text layoutX="37.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 2em;" text="Bienvenue- " />
+                  <ImageView fx:id="close" fitHeight="40.0" fitWidth="47.0" layoutX="870.0" layoutY="13.0" onMouseClicked="#clickClose" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/msclose2.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane prefHeight="868.0" prefWidth="939.0">
+               <children>
+                  <Text layoutX="204.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="Modifier  Recette" />
+                  <VBox layoutY="133.0" prefHeight="733.0" prefWidth="939.0">
+                     <children>
+                        <HBox prefHeight="285.0" prefWidth="939.0">
+                           <children>
+                              <VBox prefHeight="285.0" prefWidth="340.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  Nom             " />
+                                          <TextField fx:id="nom" onMouseExited="#ControlNom" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  Type             " />
+                                          <ComboBox fx:id="type" prefHeight="37.0" prefWidth="230.0" />
+                                       </children></HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  Description  " />
+                                          <TextArea fx:id="description" prefHeight="71.0" prefWidth="237.0" />
+                                       </children></HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="LabelImg" strokeType="OUTSIDE" strokeWidth="0.0" text=""  style="-fx-text-fill: transparent; -fx-font-size: 0.7em;"/>
+                                          <Button fx:id="AddImage" mnemonicParsing="false" onMouseClicked="#addImage" text="Modifier Image">
+                                             <HBox.margin>
+                                                <Insets left="114.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children></HBox>
+                                 </children></VBox>
+                              <VBox prefHeight="285.0" prefWidth="120.0" />
+                              <VBox prefHeight="285.0" prefWidth="343.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Personne   ">
+                                             <HBox.margin>
+                                                <Insets left="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <TextField fx:id="nbPersonne" onMouseExited="#ControlNbPersonne" prefHeight="37.0" prefWidth="218.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulté      ">
+                                             <HBox.margin>
+                                                <Insets left="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <ComboBox fx:id="difficulte" prefHeight="37.0" prefWidth="219.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cout              ">
+                                             <HBox.margin>
+                                                <Insets left="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <ComboBox fx:id="cout" prefHeight="37.0" prefWidth="219.0" />
+                                       </children>
+                                    </HBox>
+                                 </children></VBox>
+                           </children>
+                        </HBox>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIGHTGRAY" height="8.0" stroke="LIGHTGRAY" strokeType="INSIDE" width="858.0">
+                           <VBox.margin>
+                              <Insets left="7.0" />
+                           </VBox.margin></Rectangle>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="291.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temps de préparation">
+                                       <VBox.margin>
+                                          <Insets left="59.0" top="15.0" />
+                                       </VBox.margin></Text>
+                                    <TextField fx:id="Tpreparation" onMouseExited="#ControlTimeP" prefHeight="37.0">
+                                       <VBox.margin>
+                                          <Insets left="50.0" right="50.0" top="15.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="282.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temps de repos">
+                                       <VBox.margin>
+                                          <Insets left="59.0" top="15.0" />
+                                       </VBox.margin></Text>
+                                    <TextField fx:id="Trepos" onMouseExited="#ControlTimeR">
+                                       <VBox.margin>
+                                          <Insets left="50.0" right="50.0" top="15.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="287.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temps de cuisson">
+                                       <VBox.margin>
+                                          <Insets left="59.0" top="15.0" />
+                                       </VBox.margin></Text>
+                                    <TextField fx:id="Tcuisson" onMouseExited="#ControlTimeC">
+                                       <VBox.margin>
+                                          <Insets left="50.0" right="50.0" top="15.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIGHTGRAY" height="8.0" stroke="LIGHTGRAY" strokeType="INSIDE" width="858.0">
+                           <VBox.margin>
+                              <Insets left="7.0" />
+                           </VBox.margin></Rectangle>
+                        <HBox prefHeight="241.0" prefWidth="939.0">
+                           <children>
+                              <VBox prefHeight="275.0" prefWidth="279.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrédients">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" left="80.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextArea fx:id="ingredients" prefHeight="219.0" prefWidth="279.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin></TextArea>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="275.0" prefWidth="40.0" />
+                              <VBox prefHeight="275.0" prefWidth="535.0">
+                                 <children>
+                                    <HBox prefHeight="92.0" prefWidth="535.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Astuces  ">
+                                             <HBox.margin>
+                                                <Insets top="10.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <TextArea fx:id="astuces" prefHeight="92.0" prefWidth="464.0">
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children></HBox>
+                                    <HBox prefHeight="174.0" prefWidth="535.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Etapes    " />
+                                          <TextArea fx:id="etapes" prefHeight="174.0" prefWidth="466.0" />
+                                       </children></HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="84.0" prefWidth="939.0">
+                           <children>
+                              <Button fx:id="CModifierButton" layoutX="540.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#ModifierRecette" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: #cc6699; -fx-text-fill: white; -fx-background-radius: 10px; -fx-font-size: 1.2em;" text="Modifier">
+                                 <effect>
+                                    <DropShadow color="#cc6699" />
+                                 </effect>
+                              </Button>
+                              <Text fx:id="emptyimageName" fill="TRANSPARENT" layoutX="55.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: transparent; -fx-fill: transparent;" />
+                              <Text fx:id="emptyIdRecette" fill="TRANSPARENT" layoutX="27.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="27.6708984375" />
+                           </children></Pane>
+                     </children>
+                  </VBox>
+                  <Text fx:id="LabelAlert" layoutX="642.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: red; -fx-font-size: 0.7em;" text="" />
+                  <Text fx:id="LabelAlertPersonne" layoutX="642.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: red; -fx-font-size: 0.7em;" text="" />
+                  <Text fx:id="LabelAlertTemp" layoutX="642.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: red; -fx-font-size: 0.7em;" text="" />
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</AnchorPane>

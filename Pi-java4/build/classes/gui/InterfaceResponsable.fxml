@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="737.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InterfaceResponsableController">
+   <children>
+      <Pane layoutX="9.0" layoutY="-13.0" prefHeight="651.0" prefWidth="720.0" style="-fx-background-color: transparent;">
+         <children>
+            <Pane layoutX="-4.0" layoutY="30.0" prefHeight="172.0" prefWidth="724.0" style="-fx-background-color: #F08080;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="80.0" layoutY="10.0" prefHeight="60.0" prefWidth="375.0" text="Bienvenue dans votre espace" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="username" fill="#4d4747" layoutX="463.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="83.47003173828125">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="btnClose" fitHeight="29.0" fitWidth="36.0" layoutX="683.0" layoutY="26.0" onMouseClicked="#onClickClose" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow color="#000000c0" />
+                     </effect>
+                     <image>
+                        <Image url="@../icons/msclose2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="12.0" layoutY="85.0" prefHeight="45.0" prefWidth="611.0" text="Faites decouvrir vos particuliers produits a tous le monde et recevez des offres speciale !" textFill="#1f52a4">
+                     <font>
+                        <Font name="Viner Hand ITC" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="logo" fitHeight="76.0" fitWidth="63.0" layoutX="620.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/mslogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="-4.0" layoutY="203.0" opacity="0.38" prefHeight="482.0" prefWidth="724.0" style="-fx-background-color: #FFEFD5;">
+               <children>
+                  <ImageView fitHeight="473.0" fitWidth="737.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/msbackground1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn0" layoutX="212.0" layoutY="129.0" mnemonicParsing="false" onAction="#espacepat" prefHeight="80.0" prefWidth="301.0" style="-fx-background-radius: 200; -fx-font-weight: bold; -fx-font-size: 30; -fx-background-color: #cc6699; -fx-text-fill: white;" stylesheets="@../styles/SiwarButtonStyle.css" text="Espace patisserie" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn01" layoutX="204.0" layoutY="22.0" mnemonicParsing="false" onAction="#espaceprod" prefHeight="80.0" prefWidth="313.0" style="-fx-background-radius: 200; -fx-font-weight: bold; -fx-font-size: 30; -fx-background-color: #660033; -fx-text-fill: white;" stylesheets="@../styles/SiwarButtonStyle.css" text="Espace produits" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn011" layoutX="214.0" layoutY="242.0" mnemonicParsing="false" onAction="#espacecateg" prefHeight="80.0" prefWidth="297.0" style="-fx-background-radius: 200; -fx-font-weight: bold; -fx-font-size: 30; -fx-background-color: #990033; -fx-text-fill: white;" stylesheets="@../styles/SiwarButtonStyle.css" text="Espace categories" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="212.0" layoutY="355.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="297.0" style="-fx-background-radius: 200; -fx-font-weight: bold; -fx-font-size: 30; -fx-background-color: #9966ff; -fx-text-fill: white;" stylesheets="@../styles/SiwarButtonStyle.css" text="Espace Promotions" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="61.0" fitWidth="79.0" layoutX="26.0" layoutY="405.0" onMouseClicked="#LogOut" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../newwwwwwmar/Pi-java4/src/icons/mslogout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="881.0" style="-fx-background-color: #fff8dc;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ToppatisserieController">
+   <children>
+      <ImageView fitHeight="279.0" fitWidth="946.0" layoutX="-2.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/montage-degustine.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab" layoutX="434.0" layoutY="272.0" onMouseClicked="#filt" prefHeight="248.0" prefWidth="383.0" style="-fx-background-color: #e9967a;">
+        <columns>
+          <TableColumn fx:id="nompatis" prefWidth="208.0" text="Nom Patisserie" />
+          <TableColumn fx:id="note" prefWidth="242.0" text="Note" />
+            <TableColumn fx:id="id" prefWidth="203.0" text="id" visible="false" />
+            <TableColumn fx:id="desc" prefWidth="203.0" text="desc" />
+            <TableColumn fx:id="adress" prefWidth="203.0" text="adress" />
+        </columns>
+      </TableView>
+      <Button fx:id="menu" layoutY="249.0" mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: #ffdead;" text="Menu" textFill="#c92075" />
+      <ImageView fitHeight="65.0" fitWidth="76.0" layoutX="147.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/th%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="top" cache="true" cacheHint="SPEED" depthTest="ENABLE" fill="#280606" fontSmoothingType="LCD" layoutX="230.0" layoutY="153.0" lineSpacing="11.0" mouseTransparent="true" opacity="0.82" pickOnBounds="true" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="0.0" text="TOP Patisseries" underline="true">
+         <font>
+            <Font size="49.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.16" color="#ee0b0b" height="0.25" radius="6.295" width="26.93" />
+         </effect>
+      </Text>
+      <Button layoutX="521.0" layoutY="523.0" mnemonicParsing="false" onAction="#triepatisserie" style="-fx-background-color: #ffdead;" text="Filtrer par Note ascendant" textFill="#e11998" />
+      <ImageView fx:id="logo" fitHeight="67.0" fitWidth="114.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/cupcakes.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="showYoutube" layoutX="98.0" layoutY="524.0" mnemonicParsing="false" onAction="#showYoutube" style="-fx-background-color: #ffdead;" text="Voir d'autres suggestions" textFill="#bc2b2b" />
+      <Text fill="#dd1290" layoutX="8.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La moyenne de la patisserie est grace à votre évaluations totals:" wrappingWidth="339.912109375" />
+      <Text fx:id="nott" fill="#cd1872" layoutX="345.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="31.0">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text fx:id="name" fill="#d1157f" layoutX="159.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="22.0" />
+         </font></Text>
+      <Text fill="#c61c96" layoutX="9.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notre adresse est: " />
+      <Text fx:id="adrr" layoutX="106.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="280.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fill="#da1692" layoutX="11.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voila quelques Description de notre patisserie: " />
+      <Text fx:id="descrp" layoutX="260.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="171.0" />
+   </children>
+</AnchorPane>

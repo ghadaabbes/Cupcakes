@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterEvaluationController">
+   <children>
+      <ImageView fitHeight="699.0" fitWidth="1273.0" layoutX="-4.0" layoutY="-93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icone/g11.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="115.0" layoutY="77.0" opacity="0.73" prefHeight="473.0" prefWidth="413.0" style="-fx-background-color: #262626;">
+         <children>
+            <Text fill="#fcf9f9" fontSmoothingType="LCD" layoutX="96.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envoyer Evaluation" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Button layoutX="283.0" layoutY="374.0" mnemonicParsing="false" onAction="#patis" text="Envoyer" textFill="#d31b1b" />
+            <ComboBox fx:id="patis" layoutX="231.0" layoutY="91.0" prefHeight="25.0" prefWidth="162.0" promptText="Choisir une patisserie" />
+            <Text fill="#eeebeb" layoutX="12.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir une patisserie" />
+            <Text fx:id="local" fill="#e8bfbf" layoutX="14.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Que pensez-vous de notre localisation?" />
+            <Text fx:id="service" fill="#eec5c5" layoutX="17.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Que pensez-vous de notre service?" />
+            <Text fill="#ddcaca" layoutX="17.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Est-ce que vous pensez que nos prix sont raisonnables?" wrappingWidth="208.08399504423141" />
+            <Text fx:id="noteprd" fill="#fce1e1" layoutX="17.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Est-ce que notre produit répond à vos besoins?" wrappingWidth="208.08399504423141" />
+            <Text fill="#e4dcdc" layoutX="17.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Est-ce que notre decor vous a plu?" />
+            <ImageView fx:id="logo" fitHeight="99.0" fitWidth="165.0" layoutX="155.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/cupcakes.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="comloc" layoutX="237.0" layoutY="168.0" prefWidth="150.0" />
+            <ComboBox fx:id="comserv" layoutX="237.0" layoutY="203.0" prefWidth="150.0" />
+            <ComboBox fx:id="comprd" layoutX="237.0" layoutY="236.0" prefWidth="150.0" />
+            <ComboBox fx:id="compri" layoutX="237.0" layoutY="282.0" prefWidth="150.0" />
+            <ComboBox fx:id="comdec" layoutX="237.0" layoutY="323.0" prefWidth="150.0" />
+            <Button layoutX="164.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleClearButtonClick" text="nettoyer" textFill="#f80606" />
+         </children></AnchorPane>
+      <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#Menu" text="Menu" textFill="#d02525" />
+   </children>
+</AnchorPane>

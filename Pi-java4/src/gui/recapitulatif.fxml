@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="724.0" prefWidth="1207.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RecapitulatifController">
+   <children>
+      <Label layoutX="63.0" layoutY="30.0" />
+      <Label fx:id="nom" layoutX="685.0" layoutY="247.0" text="nom" textFill="#e41e1e">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="adress" layoutX="685.0" layoutY="336.0" text="Label" textFill="#221a1a">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbarticles" layoutX="685.0" layoutY="380.0" text="Label" textFill="#1e1c1c">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prixtotal" layoutX="685.0" layoutY="436.0" text="Label" textFill="#070606">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="967.0" layoutY="620.0" onMouseClicked="#passerCommande" text="passer commande" textFill="#e11b1b">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#d72626" layoutX="511.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix total :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#d01b1b" layoutX="430.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres d'articles :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#c91010" layoutX="461.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse choisie :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#da1818" layoutX="371.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Récapitulatif de votre commande">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="111.0" fitWidth="200.0" layoutX="548.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/mslogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#dd2828" layoutX="482.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mr / Mme :">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

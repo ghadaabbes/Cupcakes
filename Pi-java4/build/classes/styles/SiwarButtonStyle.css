@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 mars 2018, 19:40:24
+    Author     : CSS
+*/
+
+
+.button:hover {
+    
+    -fx-font-weight : bold;
+    -fx-background-color : #F5FFFA;
+    -fx-background-radius : 2000;
+    -fx-font-size: 12;
+    -fx-text-fill: #800080;
+    -fx-text-size: 12;
+    -fx-border-color: #800080;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+    
+}
+button:pressed{
+    -fx-font-weight : bold;
+    -fx-background-color : #F5FFFA;
+    -fx-background-radius : 2000;
+    -fx-font-size: 12;
+    -fx-text-fill: #800080;
+    -fx-text-size: 12;
+    -fx-border-color: #800080;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+    -fx-rotate: 10;   
+}
+
+

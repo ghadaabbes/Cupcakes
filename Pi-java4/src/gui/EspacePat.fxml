@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="800.0" prefWidth="997.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EspacePatController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="152.0" prefWidth="997.0" style="-fx-background-color: #DB7093;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text fill="WHITE" layoutX="338.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3.5em; -fx-font-weight: bold;" text="Bienvenue" />
+            <ImageView fx:id="acceuil" fitHeight="56.0" fitWidth="60.0" layoutX="14.0" layoutY="41.0" onMouseClicked="#Acceuil" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ms3lines.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="67.0" fitWidth="60.0" layoutX="869.0" layoutY="16.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/mslogout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fx:id="username" fill="#f2d7d7" layoutX="579.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="118.13671875" />
+      <AnchorPane layoutX="-1.0" layoutY="153.0" prefHeight="647.0" prefWidth="978.0">
+         <children>
+            <ImageView fitHeight="658.0" fitWidth="990.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/msbackground1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="110.0" layoutX="785.0" layoutY="481.0" onMouseClicked="#Delete" onMouseDragReleased="#btnDelete" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/siw2.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="btnModify" fitHeight="95.0" fitWidth="101.0" layoutX="262.0" layoutY="482.0" onMouseClicked="#Modify" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/siw1.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <TableView fx:id="Table" layoutX="106.0" layoutY="56.0" prefHeight="367.0" prefWidth="803.0" style="-fx-background-color: grey;">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="143.0" text="Nom" />
+                <TableColumn fx:id="adress" minWidth="0.0" prefWidth="226.0" text="Adresse" />
+                  <TableColumn fx:id="desc" minWidth="0.0" prefWidth="616.0" text="Description" />
+                  <TableColumn fx:id="idpat" minWidth="0.0" prefWidth="0.0" text="Column X" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn0" layoutX="393.0" layoutY="476.0" mnemonicParsing="false" onAction="#addpat" prefHeight="95.0" prefWidth="323.0" style="-fx-border-radius: 100; -fx-border-color: darksalmon; -fx-text-fill: darksalmon; -fx-font-size: 2em; -fx-font-weight: bold; -fx-background-radius: 100; -fx-background-color: #993366;" text="Ajouter une patisserie" />
+            <Button fx:id="partagerFb" layoutX="106.0" layoutY="486.0" mnemonicParsing="false" onAction="#PartagersurFB" prefHeight="86.0" prefWidth="87.0" style="-fx-background-color: Blue; -fx-text-fill: white; -fx-background-radius: 200;" text="partagerFb" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

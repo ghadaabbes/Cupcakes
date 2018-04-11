@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="761.0" style="-fx-background-color: #cbc1dd;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="gui.ListeReclamationAdminController">
+   <children>
+      <TableView fx:id="tab" layoutX="79.0" layoutY="157.0" prefHeight="321.0" prefWidth="667.0">
+        <columns>
+          <TableColumn fx:id="nompatis" prefWidth="159.0" text="nom patisserie" />
+          <TableColumn fx:id="mail" prefWidth="132.0" text="mail" />
+            <TableColumn fx:id="desc" prefWidth="159.0" text="description" />
+            <TableColumn fx:id="id" prefWidth="159.0" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <Text layoutX="212.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Reclamations ">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#Menu" text="Menu" textFill="#4f15bb" />
+   </children>
+</AnchorPane>

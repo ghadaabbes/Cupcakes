@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="900.0" prefWidth="1353.0" style="-fx-text-fill: white; -fx-font-size: 1.2em; -fx-font-weight: bold; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InterfaceAdmin_Recettes1Controller">
+   <children>
+      <SplitPane fx:id="Panel" prefHeight="930.0" prefWidth="217.0" style="-fx-background-color: #363030;">
+         <items>
+            <VBox prefHeight="928.0" prefWidth="242.0" style="-fx-background-color: #363030;">
+               <children>
+                  <VBox prefHeight="79.0" prefWidth="308.0" style="-fx-background-color: #363030;">
+                     <children>
+                        <ImageView fx:id="CHomePage" fitHeight="65.0" fitWidth="47.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../icons/ms3lines.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxAdminHome" onMouseClicked="#goToHome" prefHeight="54.0" prefWidth="215.0" style="-fx-background-color: #363030;">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Courier New; -fx-font-size: 1.5em;" text="Admin Panel">
+                           <VBox.margin>
+                              <Insets left="30.0" top="12.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxClients" onMouseClicked="#goToClients" prefHeight="52.0" prefWidth="215.0" style="-fx-background-color: #363030;">
+                     <children>
+                        <Text fx:id="Cclients" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em;" text="Clients">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets top="15.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="CBoxResponsables" onMouseClicked="#goToResponsables" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Responsables">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxProuits" onMouseClicked="#goToProduits" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Produits">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxRecettes" onMouseClicked="#goToRecettes" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #cc6699;">
+                     <children>
+                        <Text fx:id="Crecettes" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Recettes">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow color="#cc6699" />
+                     </effect>
+                  </VBox>
+                  <VBox fx:id="CBoxPrmotion" onMouseClicked="#goToPromotion" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Promotion">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxReclamation" onMouseClicked="#goToReclamation" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Réclamation">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxEvaluation" onMouseClicked="#goToEvaluation" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Evaluation">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="CBoxPanier" onMouseClicked="#goToPanier" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.3em; -fx-fill: white;" text="Panier">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="79.0" onMouseClicked="#LogOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/mslogout.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+      <VBox fx:id="ChangeItGirls" layoutX="246.0" prefHeight="930.0" prefWidth="1107.0" style="-fx-background-color: transparent;">
+         <children>
+            <Pane prefHeight="931.0" prefWidth="1107.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Pane prefHeight="120.0" prefWidth="1107.0" style="-fx-background-color: #f1bcb4;">
+                     <children>
+                        <Pane layoutX="14.0" layoutY="14.0" prefHeight="73.0" prefWidth="336.0" style="-fx-background-color: #cc6699; -fx-background-radius: 60px;">
+                           <children>
+                              <ImageView fitHeight="79.0" fitWidth="98.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/msAdmin2.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="Admin_Name" fill="WHITE" layoutX="84.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                              <Text fill="WHITE" layoutX="84.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrateur" />
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Pane>
+                        <ImageView fx:id="btnClose" fitHeight="50.0" fitWidth="47.0" layoutX="1037.0" layoutY="14.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/msclose2.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+                  <Pane layoutY="137.0" prefHeight="216.0" prefWidth="156.0" style="-fx-background-color: #f78888;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text fill="WHITE" layoutX="32.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recettes" />
+                        <Text fx:id="nb_recettes" fill="WHITE" layoutX="41.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.7em;" text="" textAlignment="CENTER" wrappingWidth="54.0" />
+                        <ImageView fitHeight="92.0" fitWidth="89.0" layoutX="23.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/msCupcake2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="171.0" layoutY="137.0" prefHeight="216.0" prefWidth="156.0" style="-fx-background-color: #5da2d5;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaires" wrappingWidth="188.4501953125" />
+                        <Text fx:id="nb_comments" fill="WHITE" layoutX="50.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.7em;" text="" wrappingWidth="50.0" />
+                        <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="36.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/mscommenter4.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="1.0" layoutY="362.0" prefHeight="555.0" prefWidth="491.0" style="-fx-background-color: #eefaf0;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9da6ae" height="4.0" layoutY="62.0" stroke="#b2a4a4" strokeType="INSIDE" width="491.0" />
+                        <ImageView fx:id="ALL_recettes" fitHeight="34.0" fitWidth="47.0" layoutX="8.0" layoutY="7.0" onMouseClicked="#DisplayAllRecettes" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/ms3lines.png" />
+                           </image>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </ImageView>
+                        <Text layoutX="60.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tableau des Recettes" />
+                        <TextField fx:id="recherche_recettes" layoutX="189.0" layoutY="86.0" onMouseEntered="#hideRecherche" prefHeight="50.0" prefWidth="215.0" />
+                        <ImageView fx:id="imgRecherche" fitHeight="50.0" fitWidth="54.0" layoutX="404.0" layoutY="85.0" onMouseClicked="#RechercheRecetteByName" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/msRecherche1.png" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="Table" layoutX="25.0" layoutY="152.0" prefHeight="358.0" prefWidth="433.0" stylesheets="@Marwastyle6.css">
+                          <columns>
+                            <TableColumn fx:id="nom" prefWidth="221.0" text="Nom" />
+                              <TableColumn fx:id="username" prefWidth="211.0" text="Proposée par" />
+                          </columns>
+                        </TableView>
+                        <ImageView fitHeight="54.0" fitWidth="58.0" layoutX="25.0" layoutY="84.0" onMouseClicked="#DetailsRecettes" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/msdetails1.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="349.0" layoutY="137.0" prefHeight="216.0" prefWidth="143.0" style="-fx-background-color: #f3d250;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votes" />
+                        <Text fx:id="nb_votes" layoutX="21.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.7em; -fx-fill: white;" text="" wrappingWidth="34.0" />
+                        <ImageView fitHeight="73.0" fitWidth="72.0" layoutX="17.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" rotate="-9.5">
+                           <image>
+                              <Image url="@../icons/msAdminStar1.png" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#cd9f0a" spread="0.66" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="510.0" layoutY="485.0" prefHeight="432.0" prefWidth="598.0" style="-fx-background-color: #eefaf0;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <BarChart fx:id="myBarChart" layoutY="47.0" prefHeight="367.0" prefWidth="598.0" stylesheets="@MarwaStyle7.css">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Pane prefHeight="47.0" prefWidth="598.0" style="-fx-background-color: darksalmon;">
+                           <children>
+                              <Text fill="WHITE" layoutX="239.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Types des recettes" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="426.0" prefHeight="12.0" prefWidth="598.0" style="-fx-background-color: darksalmon;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="510.0" layoutY="131.0" prefHeight="336.0" prefWidth="299.0" style="-fx-background-color: #eefaf0;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Pane layoutX="-1.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #4d6d9a;">
+                           <children>
+                              <Text fill="WHITE" layoutX="73.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Couts des recettes" />
+                           </children></Pane>
+                        <Pane layoutY="330.0" onMouseEntered="#ShowCoutPerc" onMouseExited="#HideCoutPerc" prefHeight="13.0" prefWidth="299.0" style="-fx-background-color: #4d6d9a;" />
+                        <PieChart fx:id="PieChartCout" layoutY="49.0" onMouseEntered="#ShowCoutPerc" onMouseExited="#HideCoutPerc" prefHeight="282.0" prefWidth="299.0" stylesheets="@MarwaStyle3.css" />
+                        <Pane fx:id="PaneCoutPercentage" layoutY="258.0" prefHeight="148.0" prefWidth="300.0" style="-fx-background-color: #4d6d9a; -fx-background-radius:10px">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <Text layoutX="31.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pas cher:" />
+                               <Text fx:id="PasCherPourcentage" layoutX="120.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                              <Text layoutX="31.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adorable:" />
+                              <Text fx:id="AdorablePourcentage" layoutX="120.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                              <Text layoutX="31.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="assez cher:" />
+                              <Text fx:id="AssezCherPourcentage" layoutX="130.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="824.0" layoutY="131.0" prefHeight="336.0" prefWidth="283.0" style="-fx-background-color: #eefaf0;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: #9e5a63;">
+                           <children>
+                              <Text fill="WHITE" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficultés des recettes" />
+                           </children></Pane>
+                        <Pane layoutY="330.0" prefHeight="12.0" prefWidth="283.0" style="-fx-background-color: #9e5a63;" />
+                        <PieChart fx:id="PieChartDiff" layoutY="47.0" onMouseEntered="#ShowDiffPerc" onMouseExited="#HideDiffPerc" prefHeight="282.0" prefWidth="283.0" stylesheets="@MarwaStyle4.css" />
+                        <Pane fx:id="PaneDiffPourcentage" layoutY="248.0" prefHeight="148.0" prefWidth="283.0" style="-fx-background-color: #9e5a63; -fx-background-radius:10px; ">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                                <children>
+                                 <Text layoutX="31.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facile:" />
+                                 <Text fx:id="FacilePourcentage" layoutX="120.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                                 <Text layoutX="31.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moyen:" />
+                                 <Text fx:id="MoyenPourcentage" layoutX="120.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                                 <Text layoutX="31.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficile:" />
+                                 <Text fx:id="DifficilePourcentage" layoutX="130.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                                 </children>
+                           
+                                 
+                           
+                              </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="PaneDetails" layoutY="120.0" prefHeight="296.0" prefWidth="499.0" style="-fx-background-color: #ffeff5; -fx-background-radius: 10px; -fx-border-color: #ff5599; -fx-border-radius: 10px; -fx-border-width: 2px;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fx:id="imageDetails" fitHeight="192.0" fitWidth="200.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                        <Text fx:id="nomDetails" layoutX="210.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.6em; -fx-fill: #cc6699;" text="" />
+                        
+                        <Text layoutX="222.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                        <Text fx:id="typeDetails" layoutX="280.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        
+                        <Text layoutX="222.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cout" />
+                        <Text fx:id="coutDetails" layoutX="280.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                     
+                        <Text layoutX="222.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulté" />
+                         <Text fx:id="difficulteDetails" layoutX="310.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                         
+                        
+                        <Text layoutX="222.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaire(s)" />
+                        <Text fx:id="commentDetails" layoutX="365.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        
+                        <Text layoutX="222.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note" />
+                        <Text fx:id="noteDetails" layoutX="310.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <ImageView fx:id="btnCloseDetails" fitHeight="47.0" fitWidth="40.0" layoutX="440.0" layoutY="21.0" onMouseClicked="#closeDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/msclose2.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</AnchorPane>

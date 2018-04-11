@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="735.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PanierController">
+   <children>
+      <ListView fx:id="panier" layoutX="200.0" layoutY="231.0" prefHeight="350.0" prefWidth="737.0" />
+      <Label fx:id="totalProduit" layoutX="982.0" layoutY="593.0" prefHeight="22.0" prefWidth="52.0" text="Label" textFill="#dd1818">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></Label>
+      <JFXButton fx:id="continuer" buttonType="RAISED" layoutX="81.0" layoutY="630.0" onMouseClicked="#achatshow" text="continuer achats" textFill="#cd1c1c" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="validerCommande" layoutX="851.0" layoutY="648.0" onMouseClicked="#adresseshow" text="validerCommande" textFill="#cd1717">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#c91818" layoutX="880.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prix total :">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#e41e1e" layoutX="493.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Panier">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="123.0" fitWidth="128.0" layoutX="507.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/mslogo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nombre" layoutX="962.0" layoutY="43.0" text="Label" textFill="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="goToAcceuil" layoutX="845.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#goToAcceuil" text="Retour vers l'acceuil" />
+   </children>  
+</AnchorPane>

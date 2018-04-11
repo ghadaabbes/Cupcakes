@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anco" prefHeight="657.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficheComandeController">
+   <children>
+      <TableView fx:id="liste" layoutX="13.0" layoutY="155.0" prefHeight="255.0" prefWidth="1118.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="175.0" text="id" />
+          <TableColumn fx:id="date" prefWidth="173.0" text="date" />
+            <TableColumn fx:id="prixtotal" prefWidth="209.0" text="prix total" />
+            <TableColumn fx:id="user" minWidth="0.0" prefWidth="307.0" text="utilisateur" />
+            <TableColumn fx:id="adresse" prefWidth="334.0" text="adresse" />
+        </columns>
+      </TableView>
+      <Text fill="#e8ad0e" layoutX="300.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Commandes">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="recherche" layoutX="691.0" layoutY="104.0" prefHeight="25.0" prefWidth="151.0" promptText="rechercher" />
+      <JFXButton fx:id="details" layoutX="404.0" layoutY="506.0" onMouseClicked="#detailscom" text="details commande">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="rech" fitHeight="26.0" fitWidth="40.0" layoutX="852.0" layoutY="111.0" onMouseClicked="#onRecherche" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/msRecherche2.gif" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="suppression" layoutX="159.0" layoutY="506.0" onMouseClicked="#Supprimercom" text="Supprimer commande">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Button fx:id="gotoacceuil" layoutX="961.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#gotoacceuil" text="Retour vers l'acceuil" />
+   </children>  
+</AnchorPane>

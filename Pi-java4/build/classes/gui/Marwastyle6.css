@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 avr. 2018, 18:03:08
+    Author     : Siala
+*/
+
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+    -fx-focus-color: #ff8977; 
+}
+
+
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #ff8977 transparent #ff8977; 
+    -fx-background-color: transparent, derive(#ff8977,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+
+
+
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterController">
+    <stylesheets>
+        <URL value="@register.css" />
+    </stylesheets>
+   <children>
+       
+      <HBox alignment="CENTER_RIGHT" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder; -fx-font-size: 2.4em; -fx-fill: white;" text="Créer un compte " wrappingWidth="267.109375">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Button fx:id="connexion" mnemonicParsing="false" onAction="#connexion" prefHeight="56.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-text-fill: #aeaeae; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.5em; -fx-font-weight: bold;" text="Connexion">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox layoutX="156.0" layoutY="110.0" prefHeight="279.0" prefWidth="290.0">
+         <children>
+            <AnchorPane opacity="0.73" prefHeight="279.0" prefWidth="273.0" style="-fx-background-color: #262626;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="18.0" layoutY="50.0" prefHeight="38.0" prefWidth="234.0" style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                       
+                        <TextField fx:id="prenomuser" prefHeight="26.0" prefWidth="234.0" promptText="prénom" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="14.0" layoutY="121.0" prefHeight="28.0" prefWidth="234.0" style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="120.0">
+                     <children>
+                       
+                        <PasswordField fx:id="mdp2" prefHeight="26.0" prefWidth="217.0" promptText="répéter mot de passe" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                        
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="18.0" layoutY="155.0" prefHeight="38.0" prefWidth="234.0" style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="155.0">
+                     <children>
+                        
+                                          <TextField fx:id="email" prefHeight="26.0" prefWidth="217.0" promptText="email" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="28.0" prefWidth="234.0" style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        
+                        <TextField fx:id="nomuser" prefHeight="26.0" prefWidth="217.0" promptText="nom utilisateur" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                       
+                     </children>
+                  </HBox>
+                  <ChoiceBox fx:id="role" layoutX="91.0" layoutY="199.0" prefWidth="150.0" />
+                  <Text layoutX="44.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROLE" />
+                  <Button fx:id="Btnvalid" layoutX="60.0" layoutY="236.0" mnemonicParsing="false" onAction="#authentifier" onMouseClicked="#authentifier" prefHeight="43.0" prefWidth="181.0" style="-fx-border-radius: 100; -fx-border-color: salmon; -fx-border-width: 0.2em; -fx-background-color: white; -fx-background-color: transparent; -fx-text-fill: salmon; -fx-font-size: 1em; -fx-font-weight: bold;" text="Valider" />
+                  <HBox alignment="CENTER" layoutX="14.0" layoutY="88.0" prefHeight="28.0" prefWidth="234.0" style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="88.0">
+                     <children>
+                        
+                              <PasswordField fx:id="mdp1" prefHeight="26.0" prefWidth="227.0" promptText="mot de passe" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                        
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="80.0" fitWidth="85.0" layoutX="260.0" layoutY="51.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/cupcakes.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="555.0" />
+   </children>
+</AnchorPane>

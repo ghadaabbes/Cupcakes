@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 avr. 2018, 21:49:47
+    Author     : Siala
+*/
+
+.chart-bar {
+.data0.chart-bar {
+    -fx-background-color:   #000066;
+}
+.data1.chart-bar {
+    -fx-background-color:  #006699;
+}
+.data2.chart-bar {
+    -fx-background-color:  #00cc66;
+}
+.data3.chart-bar {
+    -fx-background-color:  #510d51;
+}
+.data4.chart-bar {
+    -fx-background-color:  #993333;
+}
+.data5.chart-bar {
+    -fx-background-color:    #ff8977;
+}
+.data6.chart-bar {
+    -fx-background-color:   aquamarine;
+}
+.data7.chart-bar {
+    -fx-background-color:   chocolate;
+}
+.data8.chart-bar {
+    -fx-background-color:   darkred;
+}
+.data9.chart-bar {
+    -fx-background-color:   yellowgreen;
+}
+    
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+}

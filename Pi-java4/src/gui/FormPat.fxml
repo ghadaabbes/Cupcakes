@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FormPatController">
+   <children>
+      <AnchorPane layoutY="158.0" prefHeight="642.0" prefWidth="993.0" style="-fx-background-color: #f2d9e6;">
+         <children>
+            <Label layoutX="84.0" layoutY="85.0" prefHeight="69.0" prefWidth="110.0" text="Nom :">
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </Label>
+            <Label layoutX="84.0" layoutY="178.0" text="Adresse :">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </Label>
+            <Label layoutX="84.0" layoutY="266.0" text="Description :">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </Label>
+            <TextField fx:id="tnom" layoutX="305.0" layoutY="107.0" prefHeight="75.0" prefWidth="339.0" />
+            <TextField fx:id="tadresse" layoutX="305.0" layoutY="193.0" prefHeight="75.0" prefWidth="339.0" />
+            <TextField fx:id="tdescription" layoutX="305.0" layoutY="281.0" prefHeight="69.0" prefWidth="339.0" />
+            <Button fx:id="btnimg" layoutX="84.0" layoutY="435.0" mnemonicParsing="false" onAction="#uploadimage" prefHeight="50.0" prefWidth="122.0" text="Image">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img" fitHeight="201.0" fitWidth="323.0" layoutX="305.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnadd" layoutX="679.0" layoutY="510.0" mnemonicParsing="false" onAction="#addpat" prefHeight="82.0" prefWidth="263.0" style="-fx-background-radius: 200; -fx-background-color: #4d0028; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 1.8em;" text="Ajouter">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="LabelAlert" layoutX="57.0" layoutY="28.0" prefHeight="40.0" prefWidth="413.0" />
+            <Label fx:id="LabelAlert" layoutX="92.0" layoutY="28.0" prefHeight="40.0" prefWidth="406.0" />
+            <GoogleMapView fx:id="mapView" layoutX="662.0" layoutY="120.0" prefHeight="245.0" prefWidth="314.0" />
+            <TextField fx:id="langitude" layoutX="736.0" layoutY="401.0" visible="false" />
+            <TextField fx:id="altitude" layoutX="736.0" layoutY="448.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="5.0" prefHeight="152.0" prefWidth="987.0" style="-fx-background-color: #DB7093;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="acceuil" fitHeight="54.0" fitWidth="58.0" layoutX="20.0" layoutY="49.0" onMouseClicked="#acceuil" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ms3lines.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="60.0" fitWidth="58.0" layoutX="904.0" layoutY="43.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/mslogout.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="236.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 3.2em; -fx-font-weight: bold;" text="Ajouter une patisserie" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
